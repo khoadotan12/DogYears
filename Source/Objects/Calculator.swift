@@ -49,11 +49,15 @@ class Calculator {
 	private var opStack = [Op]()
 	private (set) var history = "History: "
 	private (set) var canConvert = true
-    private (set) var result = 0.0;
+    private (set) var result = 0.0
 
 	var lastOp: Op? {
 		return opStack.last
 	}
+    
+    func clear() {
+        result = 0.0
+    }
 	
 	func evaluate(op: String, arg: Double, type: Type) -> Double {
 		result = 0.0
