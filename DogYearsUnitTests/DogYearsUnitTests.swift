@@ -24,6 +24,11 @@ class DogYearsUnitTests: XCTestCase {
         let result = calc.evaluate(op: "+", arg1: 4.5, arg2: 9.0)
         XCTAssert(result == 13.5, "Calculator add operation failed")
     }
+    
+    func testSubtraction() {
+        let result = calc.evaluate(op: "-", arg1: 5, arg2: 7.3)
+        XCTAssert(result == -2.3, "Calculator Subtraction operation failed")
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
