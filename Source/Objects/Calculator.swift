@@ -49,13 +49,14 @@ class Calculator {
 	private var opStack = [Op]()
 	private (set) var history = "History: "
 	private (set) var canConvert = true
+    private (set) var result = 0.0;
 
 	var lastOp: Op? {
 		return opStack.last
 	}
 	
 	func evaluate(op: String, arg: Double, type: Type) -> Double {
-		var result = 0.0
+		result = 0.0
 		var prevOp = OperationType.none
 		let currOp = OperationType(rawValue: op) ?? OperationType.none
 		// Multiple conversion support
