@@ -130,7 +130,8 @@ class Calculator {
 	
 	func evaluate(op: String, arg1: Double, arg2: Double) -> Double {
 		let type = Type.typeFor(tag: 103)
-		_ = evaluate(op: op, arg: arg1, type: type)
+        let op1 = op == "-" ? "−" : op == "/" ? "÷" : op == "*" ? "×" : op
+		_ = evaluate(op: op1, arg: arg1, type: type)
 		let res = evaluate(op: "=", arg: arg2, type: type)
 		return res
 	}
