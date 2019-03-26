@@ -12,6 +12,8 @@ import XCTest
 class DogYearsUnitTests: XCTestCase {
     
     let calc = Calculator()
+    var resData: Data? = nil
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -45,8 +47,15 @@ class DogYearsUnitTests: XCTestCase {
     func testInfoLoading() {
         let url = "https://raw.githubusercontent.com/FahimF/Test/master/DogYears-Info.rtf"
         HTTPClient.shared.get(url: url) {(data, error) in
-            XCTAssertNil(error, "There was an error loading the InfoView content")
-            XCTAssertNotNil(data, "No data was received from the server for InfoView content")
+            self.resData = data
+        }
+        let pred = NSPredicate(format: "resData != nil")
+        let exp = expectation(for: pred, evaluatedWith: self, handler: nil)
+        let res = XCTWaiter.wait(for: [exp], timeout: 5.0)
+        if res == XCTWaiter.Result.completed {
+            XCTAssertNotNil(resData, "No data received received from the server for InfoView content")
+        } else {
+            XCTAssert(false, "The call to get the URL ran into some other error")
         }
     }
 
