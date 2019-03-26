@@ -50,10 +50,15 @@ class DogYearsUnitTests: XCTestCase {
             return
         }
         _ = vc.view
-        let txt1 = vc.txtInfo.text
+        guard let txt = vc.txtInfo.text else {
+            XCTAssertNotNil(false, "Could not instantiate storyboard for Info View content loading")
+            return
+        }
         vc.loadContent()
-        let txt2 = vc.txtInfo.text
-        XCTAssert(txt1 != txt2, "Loading content for Info View did not change text")
+        let pred = NSPredicate(format: "text != %@", txt)
+        let exp = expectation(for: pred, evaluatedWith: vc.txtInfo, handler: nil)
+        let result = XCTWaiter.wait(for: [exp], timeout: 5.0)
+        XCTAssert(result == XCTWaiter.Result.completed, "Loading content for Info View did not change text")
     }
 
     func testPerformanceExample() {
