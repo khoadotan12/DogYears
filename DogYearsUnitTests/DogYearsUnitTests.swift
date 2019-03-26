@@ -43,22 +43,11 @@ class DogYearsUnitTests: XCTestCase {
     }
     
     func testInfoLoading() {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        XCTAssertNotNil(sb, "Could not instantiate storyboard for Info View content loading")
-        guard let vc = sb.instantiateViewController(withIdentifier: "InformationView") as? InfoViewController else {
-            XCTAssertNotNil(false, "Could not instantiate storyboard for Info View content loading")
-            return
+        let url = "https://raw.githubusercontent.com/FahimF/Test/master/DogYears-Info.rtf"
+        HTTPClient.shared.get(url: url) {(data, error) in
+            XCTAssertNil(error, "There was an error loading the InfoView content")
+            XCTAssertNotNil(data, "No data was received from the server for InfoView content")
         }
-        _ = vc.view
-        guard let txt = vc.txtInfo.text else {
-            XCTAssertNotNil(false, "Could not instantiate storyboard for Info View content loading")
-            return
-        }
-        vc.loadContent()
-        let pred = NSPredicate(format: "text != %@", txt)
-        let exp = expectation(for: pred, evaluatedWith: vc.txtInfo, handler: nil)
-        let result = XCTWaiter.wait(for: [exp], timeout: 5.0)
-        XCTAssert(result == XCTWaiter.Result.completed, "Loading content for Info View did not change text")
     }
 
     func testPerformanceExample() {
