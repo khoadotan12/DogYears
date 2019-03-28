@@ -22,12 +22,6 @@ class DogYearsUnitTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testMenuLoadPerformance() {
-        var menu = Menu()
-        self.measure {
-            menu.loadDefaultMenu()
-        }
-    }
     
     func testMenuFailing() {
         var menu = Menu()

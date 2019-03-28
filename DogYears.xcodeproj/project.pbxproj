@@ -12,6 +12,7 @@
 		2AB4C1AA224C5F30003D1129 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1A9224C5F30003D1129 /* URLSessionProtocol.swift */; };
 		2AB4C1AD224C655E003D1129 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1AB224C6556003D1129 /* MockSession.swift */; };
 		2AB4C1B1224C67A2003D1129 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1B0224C67A2003D1129 /* MockDataTask.swift */; };
+		2AB4C1B9224C73F4003D1129 /* DogYearsPeformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1B8224C73F4003D1129 /* DogYearsPeformanceTests.swift */; };
 		DD095FC71FA08EA200439546 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD095FC61FA08EA200439546 /* Type.swift */; };
 		DD0FC24C1F973170003495E0 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0FC24B1F973170003495E0 /* Calculator.swift */; };
 		DD0FC24E1F974FB8003495E0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0FC24D1F974FB8003495E0 /* RoundedButton.swift */; };
@@ -47,6 +48,13 @@
 			remoteGlobalIDString = DDED15AF1F96E484000C1150;
 			remoteInfo = DogYears;
 		};
+		2AB4C1BB224C73F4003D1129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDED15A81F96E483000C1150 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDED15AF1F96E484000C1150;
+			remoteInfo = DogYears;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +65,9 @@
 		2AB4C1A9224C5F30003D1129 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		2AB4C1AB224C6556003D1129 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		2AB4C1B0224C67A2003D1129 /* MockDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
+		2AB4C1B6224C73F3003D1129 /* DogYearsPeformanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogYearsPeformanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB4C1B8224C73F4003D1129 /* DogYearsPeformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogYearsPeformanceTests.swift; sourceTree = "<group>"; };
+		2AB4C1BA224C73F4003D1129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD095FC61FA08EA200439546 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		DD0FC24B1F973170003495E0 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		DD0FC24D1F974FB8003495E0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -94,6 +105,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2AB4C1B3224C73F3003D1129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDED15AD1F96E484000C1150 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +129,15 @@
 				2A9747402247C27A003F6DC8 /* Info.plist */,
 			);
 			path = DogYearsUnitTests;
+			sourceTree = "<group>";
+		};
+		2AB4C1B7224C73F3003D1129 /* DogYearsPeformanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AB4C1B8224C73F4003D1129 /* DogYearsPeformanceTests.swift */,
+				2AB4C1BA224C73F4003D1129 /* Info.plist */,
+			);
+			path = DogYearsPeformanceTests;
 			sourceTree = "<group>";
 		};
 		DD5CAC421F970DF800631B7E /* Utility */ = {
@@ -195,6 +222,7 @@
 				DD7F8B111F96F93A00456B70 /* Source */,
 				DD7F8B121F96F95000456B70 /* Resources */,
 				2A97473D2247C27A003F6DC8 /* DogYearsUnitTests */,
+				2AB4C1B7224C73F3003D1129 /* DogYearsPeformanceTests */,
 				DDED15B11F96E484000C1150 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -204,6 +232,7 @@
 			children = (
 				DDED15B01F96E484000C1150 /* DogYears.app */,
 				2A97473C2247C27A003F6DC8 /* DogYearsUnitTests.xctest */,
+				2AB4C1B6224C73F3003D1129 /* DogYearsPeformanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +258,24 @@
 			productReference = 2A97473C2247C27A003F6DC8 /* DogYearsUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2AB4C1B5224C73F3003D1129 /* DogYearsPeformanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB4C1BD224C73F4003D1129 /* Build configuration list for PBXNativeTarget "DogYearsPeformanceTests" */;
+			buildPhases = (
+				2AB4C1B2224C73F3003D1129 /* Sources */,
+				2AB4C1B3224C73F3003D1129 /* Frameworks */,
+				2AB4C1B4224C73F3003D1129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AB4C1BC224C73F4003D1129 /* PBXTargetDependency */,
+			);
+			name = DogYearsPeformanceTests;
+			productName = DogYearsPeformanceTests;
+			productReference = 2AB4C1B6224C73F3003D1129 /* DogYearsPeformanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DDED15AF1F96E484000C1150 /* DogYears */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDED15C41F96E484000C1150 /* Build configuration list for PBXNativeTarget "DogYears" */;
@@ -252,13 +299,18 @@
 		DDED15A81F96E483000C1150 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Razeware;
 				TargetAttributes = {
 					2A97473B2247C27A003F6DC8 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DDED15AF1F96E484000C1150;
+					};
+					2AB4C1B5224C73F3003D1129 = {
+						CreatedOnToolsVersion = 10.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = DDED15AF1F96E484000C1150;
 					};
@@ -284,12 +336,20 @@
 			targets = (
 				DDED15AF1F96E484000C1150 /* DogYears */,
 				2A97473B2247C27A003F6DC8 /* DogYearsUnitTests */,
+				2AB4C1B5224C73F3003D1129 /* DogYearsPeformanceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A97473A2247C27A003F6DC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB4C1B4224C73F3003D1129 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,6 +376,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A97473F2247C27A003F6DC8 /* DogYearsUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB4C1B2224C73F3003D1129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB4C1B9224C73F4003D1129 /* DogYearsPeformanceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +425,11 @@
 			isa = PBXTargetDependency;
 			target = DDED15AF1F96E484000C1150 /* DogYears */;
 			targetProxy = 2A9747412247C27A003F6DC8 /* PBXContainerItemProxy */;
+		};
+		2AB4C1BC224C73F4003D1129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDED15AF1F96E484000C1150 /* DogYears */;
+			targetProxy = 2AB4C1BB224C73F4003D1129 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -416,6 +489,49 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = vng.khoadt2.DogYearsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogYears.app/DogYears";
+			};
+			name = Release;
+		};
+		2AB4C1BE224C73F4003D1129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKT4FDX8RV;
+				INFOPLIST_FILE = DogYearsPeformanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vng.khoadt2.DogYearsPeformanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogYears.app/DogYears";
+			};
+			name = Debug;
+		};
+		2AB4C1BF224C73F4003D1129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AKT4FDX8RV;
+				INFOPLIST_FILE = DogYearsPeformanceTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = vng.khoadt2.DogYearsPeformanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,6 +684,15 @@
 			buildConfigurations = (
 				2A9747432247C27A003F6DC8 /* Debug */,
 				2A9747442247C27A003F6DC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AB4C1BD224C73F4003D1129 /* Build configuration list for PBXNativeTarget "DogYearsPeformanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB4C1BE224C73F4003D1129 /* Debug */,
+				2AB4C1BF224C73F4003D1129 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
