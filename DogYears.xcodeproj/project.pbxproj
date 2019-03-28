@@ -11,6 +11,7 @@
 		2AB4C1A8224C5EC1003D1129 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1A7224C5EC1003D1129 /* URLSessionDataTaskProtocol.swift */; };
 		2AB4C1AA224C5F30003D1129 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1A9224C5F30003D1129 /* URLSessionProtocol.swift */; };
 		2AB4C1AD224C655E003D1129 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1AB224C6556003D1129 /* MockSession.swift */; };
+		2AB4C1B1224C67A2003D1129 /* MockDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB4C1B0224C67A2003D1129 /* MockDataTask.swift */; };
 		DD095FC71FA08EA200439546 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD095FC61FA08EA200439546 /* Type.swift */; };
 		DD0FC24C1F973170003495E0 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0FC24B1F973170003495E0 /* Calculator.swift */; };
 		DD0FC24E1F974FB8003495E0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0FC24D1F974FB8003495E0 /* RoundedButton.swift */; };
@@ -55,6 +56,7 @@
 		2AB4C1A7224C5EC1003D1129 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
 		2AB4C1A9224C5F30003D1129 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		2AB4C1AB224C6556003D1129 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
+		2AB4C1B0224C67A2003D1129 /* MockDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataTask.swift; sourceTree = "<group>"; };
 		DD095FC61FA08EA200439546 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		DD0FC24B1F973170003495E0 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		DD0FC24D1F974FB8003495E0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				2AB4C1A7224C5EC1003D1129 /* URLSessionDataTaskProtocol.swift */,
 				2AB4C1A9224C5F30003D1129 /* URLSessionProtocol.swift */,
 				2AB4C1AB224C6556003D1129 /* MockSession.swift */,
+				2AB4C1B0224C67A2003D1129 /* MockDataTask.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				DD5CAC391F96FD3F00631B7E /* Menu.swift in Sources */,
 				DD7F8B1B1F96FB7E00456B70 /* MenuCell.swift in Sources */,
 				DD0FC24C1F973170003495E0 /* Calculator.swift in Sources */,
+				2AB4C1B1224C67A2003D1129 /* MockDataTask.swift in Sources */,
 				2AB4C1AD224C655E003D1129 /* MockSession.swift in Sources */,
 				DD0FC2501F97516F003495E0 /* RoundedLabel.swift in Sources */,
 				DD095FC71FA08EA200439546 /* Type.swift in Sources */,
