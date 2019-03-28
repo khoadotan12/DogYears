@@ -17,11 +17,11 @@ class DogYearsUnitTests: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     func testAdd() {
         let result = calc.evaluate(op: "+", arg1: 4.5, arg2: 9.0)
         XCTAssert(result == 13.5, "Calculator add operation failed")
@@ -46,7 +46,9 @@ class DogYearsUnitTests: XCTestCase {
     
     func testInfoLoading() {
         let url = "https://raw.githubusercontent.com/FahimF/Test/master/DogYears-Info.rtf"
-        HTTPClient.shared.get(url: url) {(data, error) in
+        let session = URLSession.shared
+        let client = HTTPClient(session: session)
+        client.get(url: url) {(data, error) in
             self.resData = data
         }
         let pred = NSPredicate(format: "resData != nil")
@@ -58,12 +60,12 @@ class DogYearsUnitTests: XCTestCase {
             XCTAssert(false, "The call to get the URL ran into some other error")
         }
     }
-
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
 }
