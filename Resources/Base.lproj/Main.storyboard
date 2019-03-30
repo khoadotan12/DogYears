@@ -741,6 +741,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMR-Ns-3y9" customClass="RoundedLabel" customModule="DogYears" customModuleProvider="target">
                                 <rect key="frame" x="16" y="72" width="343" height="42"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="result"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="2Kk-ca-tN8"/>
                                 </constraints>

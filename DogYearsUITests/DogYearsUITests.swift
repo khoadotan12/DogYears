@@ -29,6 +29,13 @@ class DogYearsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testCalculatorEntry() {
+        let display = app.staticTexts.matching(identifier: "result").firstMatch
+        app.buttons["2"].tap()
+        app.buttons["4"].tap()
+        XCTAssert(display.label == "24", "The calculator display value did not change")
+    }
+    
     func testInfoViewNavigation() {
         
         let app = XCUIApplication()
