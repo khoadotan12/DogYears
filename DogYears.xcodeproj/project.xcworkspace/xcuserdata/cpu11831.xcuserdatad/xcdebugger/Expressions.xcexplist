@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "XCUIDevice.shared.orientation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DogYearsUITests.isPortrait():DogYearsUITests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "DogYearsUITests.isPad():DogYearsUITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIDevice.current.userInterfaceIdiom">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DogYearsUITests.navigateBack():DogYearsUITests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isPortrait()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
