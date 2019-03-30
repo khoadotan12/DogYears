@@ -27,6 +27,7 @@ class DogYearsUITests: XCTestCase {
     }
 
     func testExample() {
+        XCUIApplication().navigationBars["Master"].buttons["Menu"].tap()
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
