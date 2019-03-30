@@ -43,7 +43,7 @@ class DogYearsUITests: XCTestCase {
         let app = XCUIApplication()
         app.navigationBars["Master"].buttons["Menu"].tap()
         app.tables.staticTexts["Settings"].tap()
-        let nav = app.navigationBars["About"]
+        let nav = app.navigationBars["Settings"]
         XCTAssert(nav.exists, "The settings view navigation bar does not  ")
     }
     
@@ -53,7 +53,7 @@ class DogYearsUITests: XCTestCase {
         app.navigationBars["Master"].buttons["Menu"].tap()
         app.tables.staticTexts["About"].tap()
         let nav = app.navigationBars["About"]
-        XCTAssert(nav.exists, "The settings view navigation bar does not  ")
+        XCTAssert(nav.exists, "The about view navigation bar does not  ")
     }
     
     func testExample() {
