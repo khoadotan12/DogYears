@@ -29,13 +29,31 @@ class DogYearsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testInfoController() {
+    func testInfoViewNavigation() {
         
         let app = XCUIApplication()
         app.navigationBars["Master"].buttons["Menu"].tap()
         app.tables/*@START_MENU_TOKEN@*/.staticTexts["Information"]/*[[".cells.staticTexts[\"Information\"]",".staticTexts[\"Information\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
         let nav = app.navigationBars["Information"]
         XCTAssert(nav.exists, "The information view navigation bar does not  ")
+    }
+    
+    func testSettingsNavigation() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Master"].buttons["Menu"].tap()
+        app.tables.staticTexts["Settings"].tap()
+        let nav = app.navigationBars["About"]
+        XCTAssert(nav.exists, "The settings view navigation bar does not  ")
+    }
+    
+    func testAboutNavigation() {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Master"].buttons["Menu"].tap()
+        app.tables.staticTexts["About"].tap()
+        let nav = app.navigationBars["About"]
+        XCTAssert(nav.exists, "The settings view navigation bar does not  ")
     }
     
     func testExample() {
